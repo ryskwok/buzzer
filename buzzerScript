@@ -1,0 +1,10 @@
+var button = document.getElementById('buzzer');
+var count = 10000;   //for the next 10 seconds
+  (function submit(){
+    if(count == 0) return;
+    if(button.style.backgroundImage == "url(\"/buzzer.jpg\")") {         //if the buzzer is clickable
+      button.click();
+    }
+    count—;
+    setTimeout(submit, 1);   //click the buzzer every millisecond
+  })();
