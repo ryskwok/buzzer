@@ -5,6 +5,6 @@ var count = 10000;   //for the next 10 seconds
     if(button.style.backgroundImage == "url(\"/buzzer.jpg\")") {         //if the buzzer is clickable
       button.click();
     }
-    count—;
+    count--;
     setTimeout(submit, 1);   //click the buzzer every millisecond
   })();
