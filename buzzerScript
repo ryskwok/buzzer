@@ -1,8 +1,8 @@
 var button = document.getElementById('buzzer');
-var count = 10000;   //for the next 10 seconds
+var count = 10;   //for the next 10 seconds
   (function submit(){
     if(count == 0) return;
-    if(button.style.backgroundImage == "url(\"/buzzer.jpg\")") {         //if the buzzer is clickable
+    if(button.classList.contains("buzzBackground")) {         //if the buzzer is clickable
       button.click();
     }
     count--;
