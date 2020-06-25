@@ -4,6 +4,7 @@ var count = 10000;   //for the next 10 seconds
     if(count == 0) return;
     if(button.classList.contains("buzzBackground")) {         //if the buzzer is clickable
       button.click();
+      return; //stop clicking once clicked
     }
     count--;
     setTimeout(submit, 1);   //click the buzzer every millisecond
